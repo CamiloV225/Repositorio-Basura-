@@ -1,13 +1,14 @@
-def calc_area (r):
-    area=3.1415*r**2
+def calc_area (r, math):
+    area=math.pi*r**2
     return area
-def calc_longitud(r):
-    longitud=2*3.1415*r
+def calc_longitud(r, math):
+    longitud=2*math.pi*r
     return longitud
 def principal ():
+    import math 
     r=float(input("Ingrese el radio del circulo: "))
-    area=calc_area(r)
-    longitud=calc_longitud(r)
+    area=calc_area(r, math)
+    longitud=calc_longitud(r, math)
     print(f"El area de la cicunferencia es de: {area} cm, y su longitud es de: {longitud} cm")
 if __name__=='__main__':
     principal()
